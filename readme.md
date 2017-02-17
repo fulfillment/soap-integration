@@ -17,5 +17,5 @@ API setup.
 
 ## SOAP Integration Without NuSOAP
 
-Use [newOrderCurl.php](https://github.com/Fulfillment-dot-com/soap-intergration/blob/master/newOrderCurl.php)
+Use [newOrderCurl.php](https://github.com/fulfillment/soap-integration/blob/master/newOrderCurl.php)
 as an example. I believe most developers will prefer this version.
