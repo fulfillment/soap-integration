@@ -16,7 +16,7 @@ use of "ACF_ID". Consider this our (FDC's) internal ID. Also we support HTTPS!
 
 ### Raw Request
 
-```text
+```xml
 POST /api/order?wsdl HTTP/1.1
 Host: app.atcostfulfillment.com
 Content-Type: text/xml
@@ -88,7 +88,7 @@ Cache-Control: no-cache
 
 **Response**
 
-```text
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <request>
     <order>
@@ -105,7 +105,7 @@ You can use your order id or the "ACF_ID" that is passed back to you.
 
 **Your ID**
 
-```text
+```xml
 POST /api/track?wsdl HTTP/1.1
 Host: app.atcostfulfillment.com
 Content-Type: text/xml
@@ -128,7 +128,7 @@ Cache-Control: no-cache
 
 **ACF ID**
 
-```text
+```xml
 POST /api/track?wsdl HTTP/1.1
 Host: app.atcostfulfillment.com
 Content-Type: text/xml
