@@ -14,6 +14,11 @@ use of "ACF_ID". Consider this our (FDC's) internal ID. Also we support HTTPS!
 
 # New Order
 
+All aspects of your request should be straight forward however the second product is
+referenced as "upsell_1_sku", while your third product is referenced as "upsell_2_sku".
+If you use the [newOrderCurl.php](https://github.com/fulfillment/soap-integration/blob/master/newOrderCurl.php)
+example we've accounted for this oddity and you can simply use an array of products.
+
 ### Raw Request
 
 ```xml
