@@ -19,7 +19,7 @@ referenced as "upsell_1_sku", while your third product is referenced as "upsell_
 If you use the [newOrderCurl.php](https://github.com/fulfillment/soap-integration/blob/master/newOrderCurl.php)
 example we've accounted for this oddity and you can simply use an array of products.
 
-### Raw Request
+**Request**
 
 ```xml
 POST /api/order?wsdl HTTP/1.1
@@ -54,6 +54,25 @@ Cache-Control: no-cache
             <product_1_price>1.00</product_1_price>
          </person>
       </tns:execute>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+```
+
+**Response**
+
+```xml
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="urn:order">
+    <SOAP-ENV:Body>
+        <executeResponse>
+            <return xsi:type="tns:SweepstakesGreeting">
+                <order_id xsi:type="xsd:string">1490125006108.108</order_id>
+                <status xsi:type="xsd:string">Success</status>
+                <acf_id xsi:type="xsd:int">10994804</acf_id>
+                <error_code xsi:type="xsd:int">0</error_code>
+                <error_desc xsi:type="xsd:string"></error_desc>
+            </return>
+        </executeResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
