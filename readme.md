@@ -6,7 +6,7 @@ developed a REST-ful API and will be working with our clients and integrated par
 over the next few months (early to mid 2017) to finalize standards.
 
 At this point (March 2017) we encourage new integrations to call their account
-executive for additional details on our [REST API](https://api.fulfillment.com/docs/api).
+executive for additional details on our [REST API](https://fulfillment.github.io/api/).
 
 Please note, our SOAP API was developed when we were a much younger company known as ACF 
 (not Fulfillment.com or FDC) so you will see a few things that seem out-of-place like the
