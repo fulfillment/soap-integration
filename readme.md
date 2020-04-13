@@ -40,6 +40,7 @@ Cache-Control: no-cache
             <ship_group_code>Trackable,Cheapest,Fastest</ship_group_code>
             <ship_fname>Mike</ship_fname>
             <ship_lname>Garde</ship_lname>
+            <ship_company_name>FDC</ship_company_name>
             <ship_address1>730 King George Blvd</ship_address1>
             <ship_address2></ship_address2>
             <ship_city>Savannah</ship_city>
